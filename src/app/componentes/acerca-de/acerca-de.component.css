@@ -3,7 +3,7 @@
 }
 
 div {
-    background-color: #a1b5cb;
+    background-color: #bfc9d8;
     text-align: center;
 }
 
@@ -32,7 +32,11 @@ div {
         width: 40%;
         border-radius: 60%;
         box-shadow: 2px 2px 2px grey;
-        left: 30%;
-        top: 620px;
+        left: 10%;
+        top: 400px;
+    }
+    #nombre, #titulo{
+        margin-left: 50%;
+        text-align: center;
     }
 }

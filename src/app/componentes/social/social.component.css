@@ -5,8 +5,8 @@
 }
 
 .redes{
-    margin-right: 0,5px;
-    margin: 0,4px;
+    margin-right: 0.5em;
+    margin: 0.4em;
 }
 
 #logoAP {
@@ -15,8 +15,31 @@
 
 img{
     width: 50px;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
 }
 
-.logo{
-    margin-right: 70%;
+.btn{
+    border-width: medium;
 }
+
+/*---Para vista celular---*/
+@media (max-width: 575px){
+.container {
+    flex-direction: column;
+
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.redes img {
+    margin: 0.3em;
+}
+
+}
+
