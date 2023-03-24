@@ -14,7 +14,7 @@ public interface IPersonaService {
    public void savePersona (Persona persona) ;
 
     
-   //Eliminarf usuario
+   //Eliminar usuario
    
    public void deletePersona(Long Id);
    
