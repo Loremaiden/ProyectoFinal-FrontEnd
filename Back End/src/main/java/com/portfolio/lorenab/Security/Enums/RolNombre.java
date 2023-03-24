@@ -9,6 +9,6 @@ package com.portfolio.lorenab.Security.Enums;
  * @author Lorena Borrego
  */
 public enum RolNombre {
-    ROLE_ADMIN, ROL_USER 
+    ROLE_ADMIN, ROLE_USER 
     
 }
