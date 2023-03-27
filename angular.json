@@ -26,9 +26,9 @@
             ],
             "styles": [
               "src/styles.css",
-              "../Front End/node_modules/bootstrap/dist/css/bootstrap.css"
+              "../ProyectoFinal-FrontEnd/node_modules/bootstrap/dist/css/bootstrap.css"
             ],
-            "scripts": ["../Front End/node_modules/bootstrap/dist/js/bootstrap.js"]
+            "scripts": ["../ProyectoFinal-FrontEnd/node_modules/bootstrap/dist/js/bootstrap.js"]
           },
           "configurations": {
             "production": {

@@ -1,0 +1,44 @@
+[debug] [2023-03-27T07:39:46.278Z] ----------------------------------------------------------------------
+[debug] [2023-03-27T07:39:46.286Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Lorena Borrego\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-03-27T07:39:46.289Z] CLI Version:   11.25.1
+[debug] [2023-03-27T07:39:46.290Z] Platform:      win32
+[debug] [2023-03-27T07:39:46.290Z] Node Version:  v16.17.0
+[debug] [2023-03-27T07:39:46.296Z] Time:          Mon Mar 27 2023 04:39:46 GMT-0300 (hora estándar de Argentina)
+[debug] [2023-03-27T07:39:46.297Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-03-27T07:39:46.885Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-03-27T07:39:46.889Z] > authorizing via signed-in user (loremaiden@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Lorena Borrego\Desktop\Argentina Programa\ProyectoFinal\ProyectoFinal-FrontEnd
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-03-27T07:41:11.131Z] Using project from CLI flag: proyectofinal-frontend-1ae47
+[debug] [2023-03-27T07:41:11.238Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/proyectofinal-frontend-1ae47 [none]
+[debug] [2023-03-27T07:41:15.436Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/proyectofinal-frontend-1ae47 200
+[debug] [2023-03-27T07:41:15.438Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/proyectofinal-frontend-1ae47 {"projectId":"proyectofinal-frontend-1ae47","projectNumber":"286639009847","displayName":"ProyectoFinal-Frontend","name":"projects/proyectofinal-frontend-1ae47","resources":{"hostingSite":"proyectofinal-frontend-1ae47"},"state":"ACTIVE","etag":"1_e7b03663-b0cd-4261-91d4-089e53e35bbf"}
+[info] i  Using project proyectofinal-frontend-1ae47 (ProyectoFinal-Frontend) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
