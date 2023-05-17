@@ -1,11 +1,14 @@
-{
-  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+{"$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "PoryectoFinal": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:application": {
+          "strict": true
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -18,7 +21,7 @@
             "main": "src/main.ts",
             "polyfills": [
               "zone.js"
-            ],
+              ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
@@ -28,7 +31,9 @@
               "src/styles.css",
               "../ProyectoFinal-FrontEnd/node_modules/bootstrap/dist/css/bootstrap.css"
             ],
-            "scripts": ["../ProyectoFinal-FrontEnd/node_modules/bootstrap/dist/js/bootstrap.js"]
+            "scripts": [
+              "../ProyectoFinal-FrontEnd/node_modules/bootstrap/dist/js/bootstrap.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -44,6 +49,20 @@
                   "maximumError": "4kb"
                 }
               ],
+
+              "fileReplacements": [
+                {
+                  "replace": "../ProyectoFinal-FrontEnd/src/environments/environment.ts",
+                  "with": "../ProyectoFinal-FrontEnd/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": {
+                "scripts": true,
+                "styles": {
+                  "minify": true,
+                  "inlineCritical": false
+                }
+              },
               "outputHashing": "all"
             },
             "development": {
@@ -78,16 +97,15 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "main": "src/test.ts",
+            "polyfills": "../ProyectoFinal-FrontEnd/src/polyfill.ts",
             "tsConfig": "tsconfig.spec.json",
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
+              "../ProyectoFinal-FrontEnd/node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []

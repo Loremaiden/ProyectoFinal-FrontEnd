@@ -1,7 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { environment } from 'src/environments/environment.prod';
 import { Experiencia } from '../model/experiencia';
 
 
@@ -10,7 +9,7 @@ import { Experiencia } from '../model/experiencia';
 })
 export class SExperienciaService {
 
-  URL = environment.apiUrlExp;
+  URL = 'https://proyectofinal-backend-production-a946.up.railway.app';
 
   constructor(private httpClient: HttpClient) { }
 

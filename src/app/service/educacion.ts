@@ -1,8 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { environment } from 'src/environments/environment.prod';
-
 import { Educacion } from '../model/educacion';
 
 
@@ -11,7 +9,7 @@ import { Educacion } from '../model/educacion';
 })
 export class EducacionService {
 
-  URL = environment.apiUrlEdu;
+  URL = 'https://proyectofinal-backend-production-a946.up.railway.app';
 
   constructor(private httpClient : HttpClient) { }
 
