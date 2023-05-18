@@ -1,0 +1,22 @@
+h1{
+    text-align: center;
+}
+
+h2, h3{
+    display: inline;
+}
+
+div{
+    background: #bfc9d8;
+    color: black;
+}
+
+td{
+    color: rgb(47, 49, 51);
+}
+
+
+.row{
+    padding: 20px;
+    color:black;
+    }

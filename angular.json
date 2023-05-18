@@ -1,8 +1,9 @@
-{"$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "PoryectoFinal": {
+    "proyecto-integrador": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -16,23 +17,22 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/poryecto-final",
+            "outputPath": "dist/proyecto-integrador",
             "index": "src/index.html",
             "main": "src/main.ts",
-            "polyfills": [
-              "zone.js"
-              ],
+            "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
               "src/assets"
-            ],
+                      ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.css",
-              "../ProyectoFinal-FrontEnd/node_modules/bootstrap/dist/css/bootstrap.css"
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": [
-              "../ProyectoFinal-FrontEnd/node_modules/bootstrap/dist/js/bootstrap.js"
+              "node_modules/bootstrap/dist/js/bootstrap.js"
             ]
           },
           "configurations": {
@@ -49,20 +49,12 @@
                   "maximumError": "4kb"
                 }
               ],
-
               "fileReplacements": [
                 {
-                  "replace": "../ProyectoFinal-FrontEnd/src/environments/environment.ts",
-                  "with": "../ProyectoFinal-FrontEnd/src/environments/environment.prod.ts"
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
                 }
               ],
-              "optimization": {
-                "scripts": true,
-                "styles": {
-                  "minify": true,
-                  "inlineCritical": false
-                }
-              },
               "outputHashing": "all"
             },
             "development": {
@@ -80,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "PoryectoFinal:build:production"
+              "browserTarget": "proyecto-integrador:build:production"
             },
             "development": {
-              "browserTarget": "PoryectoFinal:build:development"
+              "browserTarget": "proyecto-integrador:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -91,21 +83,21 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "PoryectoFinal:build"
+            "browserTarget": "proyecto-integrador:build"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
             "main": "src/test.ts",
-            "polyfills": "../ProyectoFinal-FrontEnd/src/polyfill.ts",
+            "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
+            "karmaConfig": "karma.conf.js",
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
-              "../ProyectoFinal-FrontEnd/node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -114,7 +106,8 @@
       }
     }
   },
+  "defaultProject": "proyecto-integrador",
   "cli": {
     "analytics": false
   }
-}
+  }
